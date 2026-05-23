@@ -1,0 +1,7 @@
+google:
+  maps:
+    api-key: AIzaSyBAsZg23LXDkFjmqV7RGr-ilub5dxDE1iA
+
+location:
+  default-radius-km: 10
+  max-results: 5

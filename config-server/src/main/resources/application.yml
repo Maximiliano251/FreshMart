@@ -1,0 +1,18 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        native:
+          # en desarrollo usamos una carpeta local en vez de un repo Git remoto
+          # más adelante cambias esto a un repo Git real
+          search-locations: classpath:/configs
+  
+  # activa el perfil "native" para leer archivos locales
+  profiles:
+    active: native

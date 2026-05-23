@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/kuanto_ai
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+openrouter:
+  api-key: ${OPENROUTER_API_KEY}
+  model: arcee-ai/trinity-large-thinking:free
+  url: https://openrouter.ai/api/v1/chat/completions

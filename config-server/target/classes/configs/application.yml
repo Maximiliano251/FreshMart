@@ -1,0 +1,14 @@
+# Configuración global de Kuanto
+# Todos los microservicios la reciben automáticamente
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+# Configuración de logs compartida
+logging:
+  level:
+    com.kuanto: DEBUG
